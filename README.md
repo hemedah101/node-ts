@@ -1,6 +1,8 @@
-# node-ts
-A starting point for Node.js express apps with TypeScript
+Node Typescript
+=======================
 [![Dependency Status](https://david-dm.org/abz0/node-ts/status.svg?style=flat)](https://david-dm.org/abz0/node-ts) [![devDependencies Status](https://david-dm.org/abz0/node-ts/dev-status.svg)](https://david-dm.org/abz0/node-ts?type=dev)
+
+A starting point for Node.js express apps with TypeScript
 
 ### 1-Step Deployment with Heroku
 

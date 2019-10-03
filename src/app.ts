@@ -4,7 +4,6 @@ import * as logger from 'morgan';
 import * as bodyParser from 'body-parser';
 import * as helmet from 'helmet';
 import * as cors from 'cors';
-import * as errorHandler from 'errorhandler';
 
 /**
  * Controllers (route handlers)
@@ -31,18 +30,5 @@ app.use(cors({ origin: true }));
  * API examples routes.
  */
 app.get('/api', apiController.api);
-
-/**
- * Error Handler.
- */
-if (process.env.NODE_ENV === 'development') {
-    // only use in development
-    app.use(errorHandler());
-} else {
-    app.use((err: any, req: express.Request, res: express.Response) => {
-        console.error(err);
-        res.status(500).send('Server Error');
-    });
-}
 
 export default app;
